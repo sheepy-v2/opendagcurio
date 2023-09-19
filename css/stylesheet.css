@@ -27,7 +27,7 @@ body{
     display: flex;
     min-height: 200px;
     max-height: 250px;
-    background-color: darkgreen;
+    background-color: lightgreen;
     margin: 5px;
 }
 .docDetails{
