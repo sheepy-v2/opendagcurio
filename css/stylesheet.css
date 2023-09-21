@@ -7,7 +7,19 @@ p{
 }
 body{
     margin: 0px;
-    overflow: auto;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    background-color: rgba(0, 100, 0, 0.445);
+    padding: 7px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: darkgreen;
 }
 .container{
     margin: 0 auto;
@@ -68,6 +80,7 @@ body{
 img.curio{
     width: 22%;
     min-width: 150px;
+    margin: 0 auto;
 }
 body{
     background-color: yellow;
