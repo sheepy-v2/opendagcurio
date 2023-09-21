@@ -7,30 +7,35 @@ p{
 }
 body{
     margin: 0px;
+    
 }
 .container{
     margin: 0 auto;
-    margin-top: 40px;
+    padding-top: 40px;
     width: 90%;
-    
+    border-left: darkgreen solid 4px;
+    border-right: darkgreen solid 4px;
 }
 .con{
     display: flex;
     flex-direction: column;
 }
-.grid{
+.DocentTitle{
+    width: 100%;
+}
+.docents{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 5px
 }
 .docent{
     display: flex;
-    min-height: 200px;
-    max-height: 250px;
-    background-color: lightgreen;
-    margin: 5px;
+    background-color: rgba(255, 68, 0, 0.603);
+    padding: 7px;
+    border-radius: 7px;
 }
 .docDetails{
+    padding: 5px;
     display: flex;
     flex-direction: column;
 }
@@ -44,7 +49,7 @@ body{
     flex-direction: column;
 }
 .mainpage img{
-    min-width: 500px;
+    width: 100%;
     max-width: 700px;
 }
 .header{
@@ -52,6 +57,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     background-color: rgba(255, 255, 0);
+    border-bottom: darkgreen 4px solid;
 }
 .header img{
     padding: 10px;
@@ -89,65 +95,88 @@ p.name{
     flex-direction: column;
 }
 .CurioExplain{
-    background-color: darkgreen;
+    background-color: rgba(255, 68, 0, 0.603);
     display: flex;
     justify-content: center;
-    width: 400px;
+    width: 70%;
     
     height: fit-content;
     padding: 10px;
     border-radius: 5px;
 }
-.CurioExplain p{
-    font-size: 20px;
-}
 .container img{
     background-color: white;
 }
 .mainInf{
-    background-image: url("../images/Sanne\ Bas\ -\ Curio\ -\ Knipplein\ 11-1.jpg");
-    background-size: 100%;
-    width: 680px;
-    height: 450px;
+    width: 60%;
     border-radius: 	5px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .info{
-    width: 400px;
-    background-color: rgba(255, 68, 0, 0.45);
-    border-radius: 5px;
-    padding: 7px;
-    margin: auto auto;
-}
-.bar{
-    height: 10px;
-    background-color: yellow;
     width: 100%;
-    margin: 30px 0;
+    background-color: rgba(255, 68, 0, 0.603);
+    display: flex;
+    justify-content: center;
+    border-radius: 7px;
+}
+.info p{
+    width: 70%;
+    
+    margin: 0 auto;
+    padding: 14px;
 }
 .Roster{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 90%;
     border-radius: 5px;
     justify-content: center;
-    background-color: darkgreen;
 }
-.rosterImg{
-    background-size: 100%;
-    width: 50%;
-    
-}
+
 .rosterInf{
-    width: 30%;
+    background-color: rgba(255, 68, 0, 0.603);
+    border-radius: 7px;
+    width: 70%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
 }
+.rosterInf p{
+    margin: 0 auto;
+    padding: 7px;
+}
+
+
 h1{
     margin: 22px auto;
 
     display: flex;
     justify-content: center;
 }
+
+.subjects{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+.subject{
+    padding: 7px;
+    background-color: rgba(255, 68, 0, 0.603);
+    border-radius: 7px;
+}
+.title p{
+    font-size: 25px;
+}
+@media only screen and (max-width: 600px) {
+    .subjects{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+  }
